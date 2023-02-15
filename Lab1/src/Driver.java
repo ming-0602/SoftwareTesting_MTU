@@ -32,4 +32,15 @@ public class Driver {
             sleep(100);
         }
     }
+
+    public void checkNumberValid() throws IllegalArgumentException{
+        try{
+            if(driverNum > 50000){
+                throw new IllegalArgumentException("Driver number not valid");
+            }
+        }catch (IllegalArgumentException e){
+            System.out.println("Error "+ e.getMessage());
+        }
+        System.out.println("Driver number valid");
+    }
 }
