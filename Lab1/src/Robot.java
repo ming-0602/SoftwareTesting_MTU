@@ -4,9 +4,24 @@ public class Robot {
     private String name;
     private boolean working = false;
 
+    private int age;
+
     //Constructor
-    public Robot(String name) {
+    public Robot(String name, int age) {
         setName(name);
+        setAge(age);
+    }
+
+    public void setAge(int age) {
+        if(age <= 30){
+            this.age = age;
+        }else{
+            throw new IllegalArgumentException();
+        }
+    }
+
+    public int getAge(int age) {
+        return age;
     }
 
     //Getter
@@ -41,5 +56,22 @@ public class Robot {
 
     public void waitTillWorking() throws InterruptedException{
         sleep(100);
+    }
+
+    public String checkage(){
+        if (age <= 20){
+            return "Age ok";
+        }else {
+            return "Too old";
+        }
+    }
+
+
+    public double checkCost(){
+        if(age <= 5){
+            return 10000.00;
+        } else if (age <= 10) {
+            return 7500.00;
+        }else return 5000.00;
     }
 }
