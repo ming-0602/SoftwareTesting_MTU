@@ -26,6 +26,7 @@ public class RobotParamTest {
     void testcheckcostAll(int age, double expected){
         Robot buddy = new Robot("buddy", age);
         assertEquals(expected, buddy.checkCost());
+
     }
 
 
