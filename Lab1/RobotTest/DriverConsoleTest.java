@@ -29,6 +29,7 @@ class DriverConsoleTest {
         String[] lineOfOutput = whatWasPrinted.split(
                 System.getProperty("line.separator"));
         assertEquals("Driver number valid", lineOfOutput[0]);
+        //
 
     }
 

@@ -1,7 +1,8 @@
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RobotParamTest {
     private String expected;
@@ -28,15 +29,5 @@ public class RobotParamTest {
         assertEquals(expected, buddy.checkCost());
 
     }
-
-
-
-
-
-
-
-
-
-
 
 }
