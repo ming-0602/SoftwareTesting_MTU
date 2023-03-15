@@ -1,0 +1,21 @@
+1) check if user inputs 3 side values
+2) check isDigit() for all sides
+3) check if all sides larger than > 0
+4) side - a, b, c
+test case FALSE:
+a > b + c
+b > a + c
+c > a + b
+result: Not a triangle
+test case TRUE:
+- test 1:
+a = b, a = c -> Equilateral
+a = b, a != c -> Isosceles
+- test 2:
+a != b, a = c -> Isosceles
+a != b, a != c -> Scalene
+
+Conditions  Valid Partitions    Invalid Partitions  Valid Boundaries    Invalid Boundaries
+    a            a > 0                a <= 0                1                   0
+                                    not number              10
+                                       null
